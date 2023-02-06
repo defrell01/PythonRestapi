@@ -62,13 +62,13 @@ class TwoCities(Resource):
 
         with open('RU.txt', encoding='utf-8') as f:
             for line in f:
-                if city1 in line:
+                if city1.capitalize() in line:
                     lines.append(line)
                     checker += 1
                     break
 
             for line in f:
-                if city2 in line:
+                if city2.capitalize() in line:
                     lines.append(line)
                     checker += 1
                     break
